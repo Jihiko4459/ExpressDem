@@ -18,4 +18,5 @@ class Onboarding2Fragment : Fragment() {
     }
 
 
+
 }

@@ -19,11 +19,12 @@ class Onboarding1Fragment : Fragment() {
         var q=inflater.inflate(R.layout.fragment_onboarding1, container, false)
         var but_skip:AppCompatButton=q.findViewById(R.id.button_skip1)
         but_skip.setOnClickListener{
-            var intent=Intent(activity, SignUpActivity::class.java)
+            var intent=Intent(activity, Holder::class.java)
             startActivity(intent)
         }
         return q
     }
+
 
 
 }

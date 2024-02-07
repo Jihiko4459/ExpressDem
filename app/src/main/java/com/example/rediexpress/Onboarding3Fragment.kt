@@ -19,7 +19,7 @@ class Onboarding3Fragment : Fragment() {
         var q=inflater.inflate(R.layout.fragment_onboarding3, container, false)
         var but_sign_up: AppCompatButton =q.findViewById(R.id.buttonsignup)
         but_sign_up.setOnClickListener{
-            var intent= Intent(activity, SignUpActivity::class.java)
+            var intent= Intent(activity, Holder::class.java)
             startActivity(intent)
         }
         return q    }
