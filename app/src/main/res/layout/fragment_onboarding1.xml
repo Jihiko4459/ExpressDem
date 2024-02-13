@@ -67,6 +67,7 @@
         android:layout_marginEnd="24dp"
         style="@style/OnboardButtonText2"
         android:text="Next"
+        android:onClick="next1"
         android:paddingStart="35dp"
         android:paddingEnd="35dp"
         android:background="@drawable/button2"

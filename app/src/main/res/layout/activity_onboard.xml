@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white"
     tools:context=".OnboardActivity">
 
-    <androidx.viewpager2.widget.ViewPager2
+    <FrameLayout
         android:id="@+id/vpager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

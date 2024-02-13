@@ -69,6 +69,7 @@
         android:paddingEnd="35dp"
         android:stateListAnimator="@null"
         android:text="Next"
+        android:onClick="next2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

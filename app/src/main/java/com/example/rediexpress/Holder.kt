@@ -3,9 +3,9 @@ package com.example.rediexpress
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class SignUpActivity : AppCompatActivity() {
+class Holder : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_holder)
     }
 }
