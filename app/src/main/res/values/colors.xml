@@ -44,6 +44,7 @@
     <!--Text color-->
     <color name="text1">#3A3A3A</color>
     <color name="text2">#141414</color>
+    <!--Gray color-->
     <color name="gray1">#CFCFCF</color>
     <color name="gray2">#A7A7A7</color>
 
