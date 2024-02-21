@@ -52,5 +52,16 @@
         <item name="fontFamily">@font/roboto_medium</item>
         <item name="android:textSize">14dp</item>
     </style>
+    <style name="TextInET">
+        <item name="android:textColorHint">@color/gray1</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/text1</item>
+    </style>
+
 
 </resources>
