@@ -25,7 +25,7 @@ class Onboarding1Fragment : Fragment() {
         var but_skip:AppCompatButton=q.findViewById(R.id.button_skip1)
         preff= activity?.getSharedPreferences(TABLE, Context.MODE_PRIVATE)
         but_skip.setOnClickListener{
-            var intent=Intent(activity, Holder::class.java)
+            var intent=Intent(activity, SignUpActivity::class.java)
             preff?.edit()?.putBoolean(key1, true)?.apply()
             startActivity(intent)
         }

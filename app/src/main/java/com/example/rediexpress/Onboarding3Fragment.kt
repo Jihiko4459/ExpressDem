@@ -23,7 +23,7 @@ class Onboarding3Fragment : Fragment() {
         preff= activity?.getSharedPreferences(TABLE, Context.MODE_PRIVATE)
         var but_sign_up: AppCompatButton =q.findViewById(R.id.buttonsignup)
         but_sign_up.setOnClickListener{
-            var intent= Intent(activity, Holder::class.java)
+            var intent= Intent(activity, SignUpActivity::class.java)
             preff?.edit()?.putBoolean(key1, true)?.apply()
             startActivity(intent)
         }

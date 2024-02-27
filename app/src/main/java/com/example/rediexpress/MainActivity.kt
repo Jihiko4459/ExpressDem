@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             override fun onFinish() {
 
                 if (skip==true){
-                    var intent= Intent(this@MainActivity, Holder::class.java)
+                    var intent= Intent(this@MainActivity, SignUpActivity::class.java)
                     startActivity(intent)
                 }else{
                     var intent= Intent(this@MainActivity, OnboardActivity::class.java)
