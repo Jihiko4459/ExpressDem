@@ -33,10 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
 
+    implementation("com.github.barteksc:android-pdf-viewer:2.8.2")
     implementation ("io.github.chaosleung:pinview:1.4.4")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     implementation ("com.squareup.okhttp3:logging-interceptor:3.9.0")

@@ -55,7 +55,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/full_name"
                 style="@style/TextInET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -79,10 +79,10 @@
                 android:layout_marginTop="24dp"
                 android:text="Phone Number"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+                app:layout_constraintTop_toBottomOf="@+id/full_name" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/phone_number"
                 style="@style/TextInET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -91,6 +91,7 @@
                 android:layout_marginEnd="23dp"
                 android:background="@drawable/edittext_border"
                 android:ems="10"
+
                 android:hint="+7(999)999-99-99"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -106,10 +107,10 @@
                 android:layout_marginTop="24dp"
                 android:text="Email Address"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+                app:layout_constraintTop_toBottomOf="@+id/phone_number" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/email"
                 style="@style/TextInET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -133,23 +134,31 @@
                 android:layout_marginTop="24dp"
                 android:text="Password"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+                app:layout_constraintTop_toBottomOf="@+id/email" />
 
-            <EditText
-                android:id="@+id/editTextTextPassword"
-                style="@style/TextInET"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="23dp"
-                android:background="@drawable/edittext_border"
-                android:ems="10"
-                android:hint="**********"
-                android:inputType="textPassword"
+                android:id="@+id/textinput"
+                app:passwordToggleEnabled="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+                app:layout_constraintTop_toBottomOf="@+id/textView13" >
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/TextInET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="23dp"
+                    android:background="@drawable/edittext_border"
+                    android:ems="10"
+                    android:hint="**********"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
 
             <TextView
                 android:id="@+id/textView14"
@@ -160,10 +169,10 @@
                 android:layout_marginTop="24dp"
                 android:text="Confirm Password"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/textinput" />
 
             <EditText
-                android:id="@+id/editTextTextPassword3"
+                android:id="@+id/confirm_password"
                 style="@style/TextInET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -184,11 +193,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="37dp"
-                android:layout_marginEnd="67dp"
+                android:layout_marginEnd="47dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3">
+                app:layout_constraintTop_toBottomOf="@+id/confirm_password">
 
                 <CheckBox
                     android:id="@+id/checkBox"
@@ -212,22 +221,22 @@
 
                         <TextView
                             android:id="@+id/textView16"
-                            android:fontFamily="@font/roboto_regular"
-                            android:textSize="12sp"
-                            android:textColor="@color/gray2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="By ticking this box, you agree to our " />
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="By ticking this box, you agree to our "
+                            android:textColor="@color/gray2"
+                            android:textSize="12sp" />
 
                         <TextView
                             android:id="@+id/textPrivatePolicy1"
-                            android:fontFamily="@font/roboto_regular"
-                            android:textSize="12sp"
-                            android:textColor="@color/warmingcolor"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Terms and " />
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Terms and "
+                            android:textColor="@color/warmingcolor"
+                            android:textSize="12sp" />
                     </LinearLayout>
 
                     <TextView
@@ -235,10 +244,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
-                        android:textSize="12sp"
-                        android:textColor="@color/warmingcolor"
                         android:gravity="center"
-                        android:text="conditions and private policy" />
+                        android:text="conditions and private policy"
+                        android:textColor="@color/warmingcolor"
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
 

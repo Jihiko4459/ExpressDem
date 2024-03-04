@@ -75,9 +75,13 @@
             android:layout_height="wrap_content"
             android:text="Already have an account?" />
 
-        <TextView
+        <Button
             android:id="@+id/textsignin"
             style="@style/OnboardText4"
+            android:backgroundTint="@color/white"
+            android:textAlignment="textStart"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"

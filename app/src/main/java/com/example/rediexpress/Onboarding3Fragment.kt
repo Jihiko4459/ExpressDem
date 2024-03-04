@@ -27,6 +27,7 @@ class Onboarding3Fragment : Fragment() {
             preff?.edit()?.putBoolean(key1, true)?.apply()
             startActivity(intent)
         }
+
         return q    }
 
 

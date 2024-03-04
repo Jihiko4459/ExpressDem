@@ -18,13 +18,11 @@ class OnboardActivity : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE
         ).replace(R.id.vpager2, Onboarding2Fragment()).commit()
-        //supportFragmentManager.beginTransaction().replace(R.id.vpager2, Onboarding2Fragment()).commit()
     }
     fun next2(view: View) {
         supportFragmentManager.beginTransaction().setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE
         ).replace(R.id.vpager2, Onboarding3Fragment()).commit()
-        //supportFragmentManager.beginTransaction().setCustomAnimations().replace(R.id.vpager2, Onboarding3Fragment()).commit()
-        //supportFragmentManager.beginTransaction().replace(R.id.vpager2, Onboarding3Fragment()).commit()
+
     }
 
 

@@ -12,9 +12,9 @@
         style="@style/Header1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome Back"
-        android:layout_marginTop="110dp"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="90dp"
+        android:text="Welcome Back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,7 +60,7 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Password"
         style="@style/Text1"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
@@ -83,11 +83,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="17dp"
@@ -99,23 +98,29 @@
             android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:textColor="@color/gray2"
             android:button="@null"
             android:drawableStart="@drawable/cb2"
             android:drawablePadding="4dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Remember password"
+            android:textColor="@color/gray2"
             android:textSize="12sp"
-            android:text="Remember password" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textForgotPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_medium"
+            android:text="Forgot Password?"
             android:textColor="@color/primarycolor"
             android:textSize="12sp"
-            android:text="Forgot Password?" />
-    </LinearLayout>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_log_in"
