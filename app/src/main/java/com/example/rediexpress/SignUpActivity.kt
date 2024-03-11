@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.widget.addTextChangedListener
+import com.google.android.material.textfield.TextInputLayout
 import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
@@ -28,6 +29,9 @@ class SignUpActivity : AppCompatActivity() {
         var textLink2:TextView=findViewById(R.id.textPrivatePolicy2)
         var btn_sing_up:AppCompatButton=findViewById(R.id.btn_sign_up)
         var text_login:TextView=findViewById(R.id.textSingin)
+        var txt_intput:TextInputLayout=findViewById(R.id.textinput)
+        var txt_intput4:TextInputLayout=findViewById(R.id.textinput4)
+        var txt_intput2:TextInputLayout=findViewById(R.id.textinput2)
         et_full_name=findViewById(R.id.full_name)
         et_phone=findViewById(R.id.phone_number)
         et_email=findViewById(R.id.email)
@@ -51,6 +55,9 @@ class SignUpActivity : AppCompatActivity() {
                     &&et_pass_again.text.toString().isNotEmpty()
         }
         et_email.addTextChangedListener { text ->
+            if (EmailValid(text.toString())){
+
+            }
             btn_sing_up.isEnabled=et_full_name.text.toString().isNotEmpty()&&et_phone.text.toString().isNotEmpty()
                     &&et_email.text.toString().isNotEmpty()&&et_password.text.toString().isNotEmpty()
                     &&et_pass_again.text.toString().isNotEmpty()

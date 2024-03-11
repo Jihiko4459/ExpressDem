@@ -31,23 +31,33 @@
 
     <com.chaos.view.PinView
         android:id="@+id/pinView"
-        app:itemCount="6"
-        android:inputType="number"
-
+        style="@style/PinWidget.PinView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:inputType="number"
+        app:itemCount="6"
+        app:itemWidth="32dp"
+        app:itemHeight="32dp"
+        app:itemSpacing="30dp"
+        android:enabled="true"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:lineColor="@color/gray1"
+        app:lineWidth="2dp"/>
 
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="63dp"
+        android:layout_marginTop="12dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +79,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
             android:text=" resend after 1:00"
+            android:enabled="false"
             android:textColor="@color/gray2"
             android:textSize="14sp" />
     </LinearLayout>
