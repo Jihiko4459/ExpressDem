@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toolbar
@@ -22,7 +23,7 @@ class ProfileFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val l=inflater.inflate(R.layout.fragment_profile, container, false)
-        var btn_hide:RadioButton=l.findViewById(R.id.radioButton)
+        var btn_hide:CheckBox=l.findViewById(R.id.radioButton)
         var notific:CardView=l.findViewById(R.id.item3)
         var statements_reports:CardView=l.findViewById(R.id.item2)
         var cardset:CardView=l.findViewById(R.id.item4)
@@ -46,10 +47,10 @@ class ProfileFragment : Fragment() {
         }
         btn_hide.setOnClickListener {
             if (btn_hide.isChecked){
-                txt_balance.setText("**********")
+                txt_balance.setText(" **********")
             }
             else{
-                txt_balance.setText("N10,712:00")
+                txt_balance.setText(" "+"N10,712:00")
                 //достать балланс с сервера
             }
         }

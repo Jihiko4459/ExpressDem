@@ -72,7 +72,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_medium"
-
                         android:text="Hello Ken"
                         android:textColor="@color/text1"
                         android:textSize="16sp" />
@@ -95,15 +94,14 @@
                             android:id="@+id/textView37"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="106dp"
                             android:fontFamily="@font/roboto_medium"
-                            android:text="N10,712:00"
+                            android:text=" N10,712:00"
                             android:textColor="@color/primarycolor"
                             android:textSize="12sp" />
                     </LinearLayout>
                 </LinearLayout>
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/radioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
